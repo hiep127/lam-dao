@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>qml/PointEdit.qml</file>
+        <file>qml/Point.qml</file>
+        <file>images/ambulance.png</file>
+        <file>images/bicycle.png</file>
+        <file>images/car.png</file>
+        <file>images/check.png</file>
+        <file>images/electric-car.png</file>
+        <file>images/remove.png</file>
+        <file>images/vehicle.png</file>
+    </qresource>
+</RCC>

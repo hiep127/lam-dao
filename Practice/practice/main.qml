@@ -143,10 +143,16 @@ ApplicationWindow {
             id: refreshBtn
             anchors.top: display.bottom
             anchors.horizontalCenter: parent.horizontalCenter
-            text: "Refresh"
+            text: isSender ? "Update" : "Refresh"
             onClicked: {
-                timer.restart()
-                busyind.visible = true
+                if(isSender){
+                    appMain.requestUpdateItem(listView.currentIndex)
+
+                } else {
+                    appMain.requestRefesh()
+                    timer.restart()
+                    busyind.visible = true
+                }
             }
         }
 

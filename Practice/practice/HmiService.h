@@ -1,8 +1,8 @@
 #ifndef HMISERVICE_H
 #define HMISERVICE_H
 #include <QThread>
-#include <sys/ipc.h>
-#include <sys/msg.h>
+//#include <sys/ipc.h>
+//#include <sys/msg.h>
 
 class HmiService : public QThread
 {
@@ -13,7 +13,7 @@ public:
     void run() override;
 
 private:
-    key_t key;
+//    key_t key;
     int msgid;
 };
 

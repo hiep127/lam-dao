@@ -15,6 +15,10 @@ public:
     void initContext(QQmlContext *context);
     void initModel();
 
+    Q_INVOKABLE void requestRefesh();
+    Q_INVOKABLE void requestUpdateItem(int index);
+
+
 private:
     ListModel m_model;
     QSortFilterProxyModel m_filterProxy;
